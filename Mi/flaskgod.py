@@ -3,8 +3,8 @@
 from flask import Flask, render_template, request
 import requests
 import json
-import sqlalchemy
-import dask.dataframe as dd
+#import sqlalchemy
+#import dask.dataframe as dd
 
 app  = Flask(__name__)
 
@@ -23,8 +23,8 @@ def getvalue():
 	enddate = request.form['enddate']
 	return render_template('pass.html', s=startdate , e=enddate)
 
-@app.route('/')
-def dask():
+#@app.route('/')
+#def dask():
 #	ddf=dd.read_sql('test_table1',r"mysql://root:root@localhost:3001/test_db","Lat")
 #	return render_template(you desire data)
 #print(ddf.tail())
