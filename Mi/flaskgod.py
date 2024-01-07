@@ -26,6 +26,7 @@ def getvalue():
 @app.route('/')
 def dask():
 #	ddf=dd.read_sql('test_table1',r"mysql://root:root@localhost:3001/test_db","Lat")
+#	return render_template(you desire data)
 #print(ddf.tail())
 
 app.run(host="0.0.0.0" , port= 80)
